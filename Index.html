@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="Index.css">
+    <script src="Index.js"></script>
+</head>
+<body>
+<div id="box">
+    <h1 id="title">Simple Search</h1>
+
+    <!-- 发起搜索（回车） -->
+    <label>
+        <input id="search_input" onkeypress="search_input()" type="text"/>
+    </label>
+
+    <hr>
+
+    <!-- 搜索引擎 -->
+    <label>
+        Search Engine
+        <select id="search_engine">
+            <option>Google</option>
+            <option>Bing</option>
+            <option>Baidu</option>
+        </select>
+    </label>
+
+    <hr>
+
+    <!-- 新增屏蔽 -->
+    <label>
+        Insert Sites
+        <input style="padding-left: 5px;" id="insert_site" type="text">
+        <button onclick="insert_site()">新增</button>
+    </label>
+
+    <hr>
+
+    <!-- 已屏蔽网站 -->
+    <details onclick="blocked_sites()">
+        <summary>已屏蔽网站</summary>
+        <br>
+        <div id="blocked_sites">
+
+        </div>
+    </details>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "JetBrainsMono-BoldItalic" !important;
+    src: url("JetBrainsMono-BoldItalic.ttf") !important;
+}
+
+body {
+    font-family: "JetBrainsMono-BoldItalic", serif;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#box {
+    margin-top: 3%;
+    margin-left: 37%;
+    margin-right: 37%;
+}
+
+/* 标题 */
+#title {
+    text-align: center;
+}
+
+/* 输入框 */
+#search_input {
+    line-height: 52px;
+    border-radius: 31px;
+    width: 100%;
+    font-size: 24px;
+    padding-left: 5%;
+}
+
+/* 搜索引擎 */
+#search_engine {
+    width: 21%;
+    height: 21px;
+}
+
+/* 已屏蔽网站 */
+#blocked_sites {
+    width: 100%;
+    height: 170px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
