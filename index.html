@@ -32,21 +32,25 @@
     <!-- 新增屏蔽 -->
     <label>
         Insert Sites
-        <input style="padding-left: 5px;" id="insert_site" type="text">
+        <input id="insert_site" style="padding-left: 5px;" type="text">
         <button onclick="insert_site()">新增</button>
     </label>
 
     <hr>
 
     <!-- 已屏蔽网站 -->
-    <details onclick="blocked_sites()">
+    <details id="blocked_sites_details" onclick="blocked_sites()">
         <summary>已屏蔽网站</summary>
         <br>
-        <div id="blocked_sites">
-
-        </div>
+        <label>
+            <textarea id="blocked_sites">
+        </textarea>
+        </label>
+        <button>导出</button>
+        <button>清空</button>
     </details>
 
+    <hr>
 
 </div>
 </body>
